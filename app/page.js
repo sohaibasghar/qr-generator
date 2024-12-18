@@ -52,6 +52,9 @@ export default function App() {
       <div ref={qrRef} style={styles.qrContainer}>
         <QRCode size={qrHeight} value={qrValue} />
       </div>
+      <footer style={styles.footer}>
+        &copy; {new Date().getFullYear()} Sohaib Asghar. All rights reserved.
+      </footer>
     </div>
   );
 }
@@ -112,4 +115,9 @@ const styles = {
     borderRadius: "10px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   },
+  footer:{
+    marginTop: "20px",
+    fontSize: "0.9rem",
+    color: "#777"
+  }
 };
